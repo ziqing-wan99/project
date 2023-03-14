@@ -1,21 +1,13 @@
 import re
-import string
-from unicodedata import decimal
-
 import pandas as pd
 from datetime import datetime
 import nltk
 from geopy.exc import GeocoderTimedOut, GeocoderServiceError
-from nltk.probability import FreqDist
-from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
-from nltk import pos_tag
-from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from tqdm.auto import tqdm
 from geopy.geocoders import Nominatim
-from functools import lru_cache
 
 nltk.download('punkt')
 nltk.download('stopwords')
